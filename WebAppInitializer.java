@@ -5,7 +5,7 @@ package springmvc.config;
 
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
-import springmvc.utility.IStrings;
+import springmvc.utility.IRequestMappings;
 
 /**
  * @author Chuck
@@ -42,21 +42,21 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
 	@Override
 	protected String[] getServletMappings() {
 		return new String[] { 
-				IStrings.SPRING_MVC_URL,
-				IStrings.LOCATIONS_URL,
-				IStrings.USER_LIST_URL,
-				IStrings.USER_NEW_URL,
-				IStrings.USER_EDIT_URL,
-				IStrings.USER_DELETE_URL,
-				IStrings.USER_SAVE_URL,
-				IStrings.EVENT_LIST_URL,
-				IStrings.EVENT_NEW_URL, 
-				IStrings.EVENT_EDIT_URL, 
-				IStrings.EVENT_DELETE_URL, 
-				IStrings.EVENT_SAVE_URL, 
-				IStrings.LOCATION_NEW_URL, 
-				IStrings.LOCATION_EDIT_URL, 
-				IStrings.LOCATION_SAVE_URL
+				IRequestMappings.SPRING_MVC_URL,
+				IRequestMappings.LOCATIONS_URL,
+				IRequestMappings.USER_LIST_URL,
+				IRequestMappings.USER_NEW_URL,
+				IRequestMappings.USER_EDIT_URL,
+				IRequestMappings.USER_DELETE_URL,
+				IRequestMappings.USER_SAVE_URL,
+				IRequestMappings.EVENT_LIST_URL,
+				IRequestMappings.EVENT_NEW_URL, 
+				IRequestMappings.EVENT_EDIT_URL, 
+				IRequestMappings.EVENT_DELETE_URL, 
+				IRequestMappings.EVENT_SAVE_URL, 
+				IRequestMappings.LOCATION_NEW_URL, 
+				IRequestMappings.LOCATION_EDIT_URL, 
+				IRequestMappings.LOCATION_SAVE_URL
 				};
 	}
 	
