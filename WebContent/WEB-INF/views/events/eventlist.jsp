@@ -72,7 +72,7 @@ th {
 					<td>${event.createdDate}</td>
 					<td>${event.updatedDate}</td>
 					<td><a href="${root}/events/eventedit?id=${event.eventId}">E</a> - <a href="${root}/events/eventdelete?id=${event.eventId}">D</a> -
-						<button id='click${status.index}' value='https://www.google.com/maps?q=${event.latitude},${event.longitude}'>Map</button></td>
+						<button id='click${status.index}' value='https://www.google.com/maps/@${event.latitude},${event.longitude},15z'>Map</button></td>
 
 					<%-- https://www.google.com/maps/@33.423037,-116.388672,11z --%>
 					<%-- https://www.google.com/maps?q=33.423037,-116.388672 --%>
